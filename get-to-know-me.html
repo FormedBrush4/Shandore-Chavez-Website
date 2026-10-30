@@ -1,0 +1,362 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a111b">
+  <meta name="description" content="Beyond Engineering - Get to Know Shandore Chavez">
+
+  <title>Beyond Engineering | Shandore Chavez</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+
+  <style>
+
+    /* BEYOND ENGINEERING PAGE */
+
+    .beyond-intro {
+      max-width: 750px;
+    }
+
+    .beyond-activities {
+      padding-top: 75px;
+      padding-bottom: 100px;
+    }
+
+    .beyond-activity {
+      margin-bottom: 85px;
+    }
+
+    .beyond-activity:last-child {
+      margin-bottom: 0;
+    }
+
+    .beyond-activity-header {
+      margin-bottom: 28px;
+    }
+
+    .beyond-activity-header h2 {
+      margin: 12px 0 16px;
+    }
+
+    .beyond-activity-header p {
+      max-width: 720px;
+      line-height: 1.8;
+    }
+
+    /* VIDEO CARD */
+
+    .beyond-video-card {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid rgba(10, 17, 27, 0.10);
+      border-radius: 16px;
+      background: #ffffff;
+    }
+
+    .beyond-video-card video {
+      display: block;
+      width: 100%;
+      max-height: 650px;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #0a111b;
+    }
+
+    .beyond-video-card figcaption {
+      padding: 20px 24px;
+      color: #52606d;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .beyond-video-card figcaption strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #0a111b;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.05rem;
+    }
+
+    /* DIVIDER */
+
+    .beyond-activity-divider {
+      height: 1px;
+      margin: 75px 0;
+      background: rgba(10, 17, 27, 0.12);
+    }
+
+    .beyond-back {
+      margin-top: 65px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .beyond-activities {
+        padding-top: 50px;
+        padding-bottom: 70px;
+      }
+
+      .beyond-activity {
+        margin-bottom: 55px;
+      }
+
+      .beyond-video-card video {
+        max-height: 420px;
+      }
+
+      .beyond-video-card figcaption {
+        padding: 16px;
+      }
+
+      .beyond-activity-divider {
+        margin: 55px 0;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header class="site-header">
+
+    <nav class="nav container">
+
+      <a class="brand" href="index.html">
+        Shandore <span>Chavez</span><i>.</i>
+      </a>
+
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+
+        <a href="index.html#about">About</a>
+
+        <a href="index.html#projects">Projects</a>
+
+        <a href="get-to-know-me.html">Beyond Engineering</a>
+
+        <a href="index.html#contact">Contact</a>
+
+        <a
+          href="https://drive.google.com/file/d/1NOX9wpgN5fIBPHd42-TwJvrC8FeoGiRv/view?usp=sharing"
+          class="nav-resume"
+          target="_blank"
+          rel="noopener"
+        >
+          Resume ↗
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- PAGE INTRODUCTION -->
+
+    <section class="page-hero">
+
+      <div class="container">
+
+        <a href="index.html" class="back-link">
+          ← Back to Home
+        </a>
+
+        <div class="section-kicker">
+          BEYOND ENGINEERING / ABOUT ME
+        </div>
+
+        <h1>
+          Beyond <em>Engineering.</em>
+        </h1>
+
+        <p class="beyond-intro">
+          Engineering is a big part of who I am, but there's
+          more to my life than designing aircraft and rockets.
+          Outside of my projects, I enjoy staying active,
+          learning new things, and connecting with people.
+          Two activities I particularly enjoy are swimming
+          and salsa dancing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ACTIVITIES -->
+
+    <section class="page-content beyond-activities">
+
+      <div class="container">
+
+
+        <!-- 01 / SWIMMING -->
+
+        <article class="beyond-activity">
+
+          <div class="beyond-activity-header">
+
+            <div class="section-kicker">
+              01 / SWIMMING
+            </div>
+
+            <h2>
+              Life in the <em>Water.</em>
+            </h2>
+
+            <p>
+              Swimming has always been one of my favorite
+              ways to stay active. I enjoy the physical
+              challenge, improving my technique, and pushing
+              myself to get better. It's also a great way
+              for me to clear my mind and recharge outside
+              of engineering.
+            </p>
+
+          </div>
+
+
+          <figure class="beyond-video-card">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+
+              <source
+                src="assets/Swimming.mp4"
+                type="video/mp4"
+              >
+
+              Your browser does not support HTML5 video.
+
+            </video>
+
+            <figcaption>
+
+              <strong>Swimming</strong>
+
+              Time spent in the pool, enjoying the sport,
+              challenging myself, and staying active.
+
+            </figcaption>
+
+          </figure>
+
+        </article>
+
+
+        <!-- SECTION DIVIDER -->
+
+        <div class="beyond-activity-divider"></div>
+
+
+        <!-- 02 / SALSA DANCING -->
+
+        <article class="beyond-activity">
+
+          <div class="beyond-activity-header">
+
+            <div class="section-kicker">
+              02 / SALSA DANCING
+            </div>
+
+            <h2>
+              Finding My <em>Rhythm.</em>
+            </h2>
+
+            <p>
+              Salsa dancing is one of my favorite ways to
+              have fun and meet new people. I love the energy
+              of the music, learning new moves, and the
+              social atmosphere that comes with dancing.
+              It's an activity that lets me express myself,
+              build confidence, and connect with others.
+            </p>
+
+          </div>
+
+
+          <figure class="beyond-video-card">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+
+              <source
+                src="assets/Salsa.mp4"
+                type="video/mp4"
+              >
+
+              Your browser does not support HTML5 video.
+
+            </video>
+
+            <figcaption>
+
+              <strong>Salsa Dancing</strong>
+
+              Enjoying salsa, learning new moves, and
+              connecting with people through music and dance.
+
+            </figcaption>
+
+          </figure>
+
+        </article>
+
+
+        <!-- BACK TO HOME -->
+
+        <div class="beyond-back">
+
+          <a href="index.html" class="btn btn-primary">
+            Back to Home ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
