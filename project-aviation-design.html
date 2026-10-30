@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a111b">
+  <meta name="description" content="AIAA Aviation Design RC aircraft project by Shandore Chavez">
+  <title>Aviation Design | Shandore Chavez</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .aviation-gallery-feature,
+    .aviation-gallery-card {
+      margin: 28px 0 0;
+      overflow: hidden;
+      border: 1px solid rgba(10, 17, 27, 0.10);
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .aviation-gallery-feature img {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      background: #f6f7f8;
+    }
+
+    .aviation-gallery-feature figcaption,
+    .aviation-gallery-card figcaption {
+      padding: 13px 16px;
+      color: #52606d;
+      font-size: 0.9rem;
+    }
+
+    .aviation-image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .aviation-image-grid .aviation-gallery-card {
+      margin: 0;
+    }
+
+    .aviation-gallery-card img {
+      display: block;
+      width: 100%;
+      height: 290px;
+      object-fit: contain;
+      background: #f6f7f8;
+    }
+
+    .aviation-analysis-image img {
+      background: #555;
+    }
+
+    .aviation-gallery-wide {
+      grid-column: 1 / -1;
+    }
+
+    .aviation-gallery-wide img {
+      height: 320px;
+    }
+
+    .aviation-vtail-image img {
+      max-height: 460px;
+    }
+
+    @media (max-width: 700px) {
+      .aviation-image-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .aviation-gallery-wide {
+        grid-column: auto;
+      }
+
+      .aviation-gallery-card img {
+        height: auto;
+        max-height: 340px;
+      }
+    }
+  </style>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="index.html">
+      Shandore <span>Chavez</span><i>.</i>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="get-to-know-me.html">Beyond Engineering</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="https://drive.google.com/file/d/1NOX9wpgN5fIBPHd42-TwJvrC8FeoGiRv/view?usp=sharing" class="nav-resume" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PROJECT INTRODUCTION -->
+
+  <section class="page-hero">
+    <div class="container">
+      <a href="index.html#projects" class="back-link">← Back to Projects</a>
+
+      <div class="section-kicker">PROJECT 02 / AVIATION DESIGN</div>
+
+      <h1>RC Aircraft <em>Design & Development.</em></h1>
+
+      <p>
+        Designed and developed a radio controlled aircraft with a four person
+        engineering team, focusing on maximizing speed while meeting design
+        constraints. My responsibilities included simulation and engineering
+        analysis, supporting the design, testing, and development of the aircraft.
+      </p>
+
+      <div class="aviation-hero-tags">
+        <span>Aircraft Design</span>
+        <span>XFLR5</span>
+        <span>SolidWorks</span>
+        <span>Structural Analysis</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECT OVERVIEW -->
+
+  <section class="page-content">
+    <div class="container">
+
+      <div class="aviation-section-heading">
+        <div class="section-kicker">01 / PROJECT OVERVIEW</div>
+        <h2>Project Goals<span class="period">.</span></h2>
+      </div>
+
+      <div class="aviation-goals-grid">
+
+        <article class="aviation-info-card">
+          <span class="aviation-card-number">01</span>
+          <h3>Design & Build</h3>
+          <p>Successfully design, test, build, and fly an RC aircraft.</p>
+        </article>
+
+        <article class="aviation-info-card">
+          <span class="aviation-card-number">02</span>
+          <h3>Maximize Speed</h3>
+          <p>Push for maximum aircraft speed while meeting all design constraints.</p>
+        </article>
+
+        <article class="aviation-info-card">
+          <span class="aviation-card-number">03</span>
+          <h3>Team Collaboration</h3>
+          <p>Improve team communication and coordination throughout development.</p>
+        </article>
+
+        <article class="aviation-info-card">
+          <span class="aviation-card-number">04</span>
+          <h3>Engineering Application</h3>
+          <p>Advance our understanding of aerospace engineering fundamentals.</p>
+        </article>
+
+      </div>
+
+
+      <!-- AIRCRAFT SPECIFICATIONS -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">02 / AIRCRAFT CONFIGURATION</div>
+        <h2>Aircraft Specifications<span class="period">.</span></h2>
+        <p>Overall aircraft dimensions and configuration.</p>
+      </div>
+
+      <div class="aviation-spec-grid">
+
+        <div class="aviation-spec-card">
+          <span>WINGSPAN</span>
+          <strong>47.4 <small>in</small></strong>
+        </div>
+
+        <div class="aviation-spec-card">
+          <span>FUSELAGE LENGTH</span>
+          <strong>38.58 <small>in</small></strong>
+        </div>
+
+        <div class="aviation-spec-card">
+          <span>AIRCRAFT MASS</span>
+          <strong>63.5 <small>oz</small></strong>
+          <p>1,800 grams</p>
+        </div>
+
+        <div class="aviation-spec-card">
+          <span>THRUST-TO-WEIGHT RATIO</span>
+          <strong>1.04</strong>
+        </div>
+
+      </div>
+
+      <figure class="aviation-gallery-feature">
+        <img
+          src="assets/aircraft-full-assembly.png"
+          alt="Complete RC aircraft CAD assembly showing the fuselage, wings, tail, and landing gear"
+          loading="lazy"
+        >
+        <figcaption>Full aircraft CAD assembly</figcaption>
+      </figure>
+
+
+      <!-- AIRFOIL -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">03 / AERODYNAMIC DESIGN</div>
+        <h2>Airfoil Analysis - NACA 2412<span class="period">.</span></h2>
+      </div>
+
+      <div class="aviation-detail-grid">
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">01</span>
+            <span class="aviation-card-label">AIRFOIL GEOMETRY</span>
+          </div>
+
+          <h3>NACA 2412</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Chord length</span><strong>7 inches</strong></li>
+            <li><span>Airfoil thickness</span><strong>12%</strong></li>
+          </ul>
+        </div>
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">02</span>
+            <span class="aviation-card-label">AERODYNAMIC PERFORMANCE</span>
+          </div>
+
+          <h3>XFLR5 Analysis</h3>
+
+          <p>
+            The NACA 2412 airfoil was selected for its strong lift and
+            low drag characteristics within the aircraft's operating range.
+          </p>
+
+          <ul class="aviation-data-list">
+            <li><span>Test speed 1</span><strong>10 mph</strong></li>
+            <li><span>Test speed 2</span><strong>30 mph</strong></li>
+            <li><span>Test speed 3</span><strong>80 mph</strong></li>
+          </ul>
+
+          <p class="aviation-note">
+            The airfoil performed consistently throughout the tested speed ranges.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="aviation-image-grid">
+
+        <figure class="aviation-gallery-card">
+          <img
+            src="assets/naca-2412-profile.png"
+            alt="NACA 2412 airfoil profile"
+            loading="lazy"
+          >
+          <figcaption>NACA 2412 airfoil geometry</figcaption>
+        </figure>
+
+        <figure class="aviation-gallery-card">
+          <img
+            src="assets/airfoil-performance-graph.png"
+            alt="XFLR5 lift coefficient versus drag coefficient performance graph"
+            loading="lazy"
+          >
+          <figcaption>XFLR5 aerodynamic performance analysis</figcaption>
+        </figure>
+
+      </div>
+
+
+      <!-- WING DESIGN -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">04 / STRUCTURAL DESIGN</div>
+        <h2>Wing Design & Analysis<span class="period">.</span></h2>
+      </div>
+
+      <div class="aviation-detail-grid">
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">01</span>
+            <span class="aviation-card-label">STRUCTURAL ANALYSIS</span>
+          </div>
+
+          <h3>Wing Strength</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Design load</span><strong>50 N (2G)</strong></li>
+            <li><span>Wing support</span><strong>Aluminum spar</strong></li>
+            <li><span>Yielding</span><strong>None under expected loads</strong></li>
+            <li><span>Factor of safety</span><strong>2.83</strong></li>
+          </ul>
+
+          <p>
+            The wing was designed to withstand the expected loading
+            conditions, with an aluminum spar providing additional structural support.
+          </p>
+        </div>
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">02</span>
+            <span class="aviation-card-label">WING CONFIGURATION</span>
+          </div>
+
+          <h3>Wing Geometry</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Wing position</span><strong>Low wing</strong></li>
+            <li><span>Dihedral angle</span><strong>5°</strong></li>
+          </ul>
+
+          <p>
+            The 5 degree dihedral configuration was incorporated to
+            contribute to roll stability and increased lift.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="aviation-image-grid">
+
+        <figure class="aviation-gallery-card aviation-analysis-image">
+          <img
+            src="assets/wing-stress-analysis.png"
+            alt="Structural stress analysis of the aircraft wing"
+            loading="lazy"
+          >
+          <figcaption>Wing stress analysis</figcaption>
+        </figure>
+
+        <figure class="aviation-gallery-card aviation-analysis-image">
+          <img
+            src="assets/wing-deflection-analysis.png"
+            alt="Structural deflection analysis of the aircraft wing"
+            loading="lazy"
+          >
+          <figcaption>Wing deflection analysis</figcaption>
+        </figure>
+
+      </div>
+
+
+      <!-- FUSELAGE -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">05 / AIRFRAME DESIGN</div>
+        <h2>Fuselage Design<span class="period">.</span></h2>
+      </div>
+
+      <div class="aviation-detail-grid">
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">01</span>
+            <span class="aviation-card-label">MATERIALS</span>
+          </div>
+
+          <h3>Material Selection</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Primary structure</span><strong>Balsa plywood</strong></li>
+            <li><span>Motor mount</span><strong>Aluminum</strong></li>
+            <li><span>Additional components</span><strong>3D-printed PLA</strong></li>
+          </ul>
+        </div>
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">02</span>
+            <span class="aviation-card-label">DESIGN FEATURES</span>
+          </div>
+
+          <h3>Fuselage Configuration</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Body geometry</span><strong>Circular fuselage</strong></li>
+            <li><span>Structural feature</span><strong>Aluminum angle</strong></li>
+            <li><span>Weight distribution</span><strong>Counterweights for CG</strong></li>
+            <li><span>Propulsion support</span><strong>Motor mount</strong></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="aviation-image-grid">
+
+        <figure class="aviation-gallery-card">
+          <img
+            src="assets/fuselage-full-model.png"
+            alt="Full-length CAD model of the aircraft fuselage"
+            loading="lazy"
+          >
+          <figcaption>Fuselage structural model</figcaption>
+        </figure>
+
+        <figure class="aviation-gallery-card">
+          <img
+            src="assets/fuselage-frame-rings.png"
+            alt="Circular fuselage frame rings and internal structural supports"
+            loading="lazy"
+          >
+          <figcaption>Fuselage frame construction</figcaption>
+        </figure>
+
+        <figure class="aviation-gallery-card">
+          <img
+            src="assets/fuselage-internal-assembly.png"
+            alt="Internal fuselage assembly showing installed components"
+            loading="lazy"
+          >
+          <figcaption>Internal component layout</figcaption>
+        </figure>
+
+        <figure class="aviation-gallery-card">
+          <img
+            src="assets/motor-mount-front.png"
+            alt="Front view of the aircraft motor mount assembly"
+            loading="lazy"
+          >
+          <figcaption>Motor mount assembly</figcaption>
+        </figure>
+
+        <figure class="aviation-gallery-card aviation-gallery-wide">
+          <img
+            src="assets/motor-mount-detail.png"
+            alt="Detailed CAD view of the motor mount"
+            loading="lazy"
+          >
+          <figcaption>Motor mount detail</figcaption>
+        </figure>
+
+      </div>
+
+
+      <!-- EMPENNAGE -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">06 / STABILITY & CONTROL</div>
+        <h2>Empennage - V-Tail<span class="period">.</span></h2>
+      </div>
+
+      <div class="aviation-detail-grid">
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">01</span>
+            <span class="aviation-card-label">GEOMETRY & DIMENSIONS</span>
+          </div>
+
+          <h3>45° V-Tail</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Tail airfoil</span><strong>NACA 0012</strong></li>
+            <li><span>Length per stabilizer</span><strong>6 inches</strong></li>
+            <li><span>Chord</span><strong>5 inches</strong></li>
+            <li><span>Area per surface</span><strong>30 in²</strong></li>
+            <li><span>Total V-tail area</span><strong>60 in²</strong></li>
+          </ul>
+        </div>
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">02</span>
+            <span class="aviation-card-label">DESIGN PERFORMANCE</span>
+          </div>
+
+          <h3>V-Tail Configuration</h3>
+
+          <ul class="aviation-feature-list">
+            <li>Reduced aerodynamic drag</li>
+            <li>Lower overall weight</li>
+            <li>Combines pitch and yaw control</li>
+            <li>Provides surface area for stability</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <figure class="aviation-gallery-feature aviation-vtail-image">
+        <img
+          src="assets/v-tail-assembly.png"
+          alt="CAD assembly of the aircraft's 45-degree V-tail stabilizers"
+          loading="lazy"
+        >
+        <figcaption>45° V-tail assembly</figcaption>
+      </figure>
+
+
+      <!-- PROPULSION -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">07 / PROPULSION SYSTEM</div>
+        <h2>Propulsion & Performance<span class="period">.</span></h2>
+      </div>
+
+      <div class="aviation-detail-grid">
+
+        <div class="aviation-detail-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">01</span>
+            <span class="aviation-card-label">PROPULSION HARDWARE</span>
+          </div>
+
+          <h3>Power System</h3>
+
+          <ul class="aviation-data-list">
+            <li><span>Propeller</span><strong>APC-E 9 × 7.5, 2-blade</strong></li>
+            <li><span>Motor</span><strong>Cobra C-3510/16</strong></li>
+            <li><span>Motor KV</span><strong>1200</strong></li>
+            <li><span>Electronic speed controller</span><strong>40A ESC</strong></li>
+            <li><span>ESC connectors</span><strong>3.5 mm bullet plugs</strong></li>
+            <li><span>Battery</span><strong>2200 mAh, 11.1 V Li-Po</strong></li>
+          </ul>
+        </div>
+
+        <div class="aviation-detail-card aviation-performance-card">
+          <div class="aviation-card-top">
+            <span class="aviation-card-number">02</span>
+            <span class="aviation-card-label">RECORDED SPEED</span>
+          </div>
+
+          <h3>Aircraft Speed</h3>
+
+          <div class="aviation-speed">
+            <strong>65.2</strong>
+            <span>MPH</span>
+          </div>
+
+          <ul class="aviation-data-list">
+            <li><span>Unloaded speed</span><strong>65.2 mph</strong></li>
+            <li><span>Loaded speed</span><strong>65.2 mph</strong></li>
+            <li><span>Metric equivalent</span><strong>105 km/h</strong></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <!-- BUILD PHOTO AND FLIGHT VIDEO: ADD THESE WHEN READY -->
+
+      <div class="aviation-section-heading aviation-spaced">
+        <div class="section-kicker">08 / BUILD & FLIGHT TESTING</div>
+        <h2>From Design to Flight<span class="period">.</span></h2>
+      </div>
+
+      
+<!-- FLIGHT TEST VIDEO -->
+
+<figure class="aviation-gallery-feature aviation-flight-media">
+
+  <video
+    controls
+    playsinline
+    preload="metadata"
+    style="display: block; width: 100%; max-height: 680px; background: #0a111b;"
+  >
+    <source
+      src="assets/plane-fly.mp4"
+      type="video/mp4"
+    >
+
+  </video>
+
+  <figcaption>
+    RC Aircraft Flight Testing
+  </figcaption>
+
+</figure>
+
+
+
+      <!-- RETURN TO PROJECTS -->
+
+      <div class="aviation-end">
+        <p>Designed. Analyzed. Built. Flown.</p>
+        <a href="index.html#projects" class="btn btn-primary">
+          Back to All Projects ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
